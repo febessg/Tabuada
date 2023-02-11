@@ -1,11 +1,11 @@
-let number;
 
 let contador = 1;
 
-let desejaContinuar
+let desejaContinuar;
+
 
 do {
-number = window.prompt("Digite um número de 1 a 9")
+    let number = window.prompt("Digite um número de 1 a 9");
 if (number > 0 && number < 10) {
     while (contador <10) {
     console.log(number * contador)
@@ -13,7 +13,6 @@ if (number > 0 && number < 10) {
     }
     desejaContinuar = window.prompt("Deseja continuar? [sim/nao]")
 } else {
-   window.prompt("Número inválido.")
+   alert("Número inválido.")
 }
-
 } while (desejaContinuar === "sim")
